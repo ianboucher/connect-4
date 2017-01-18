@@ -1,18 +1,19 @@
 {
-  "name": "bloc-frontend-project-starter",
+  "name": "connect4",
   "version": "0.0.2",
-  "description": "Starter project for the Bloc Frontend Web Development",
+  "description": "Multiplayer Connect 4 Game",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bloc/bloc-frontend-project-starter"
+    "url": "https://github.com/ianboucher/connect-4"
   },
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Bloc Inc",
+  "author": "Ian Boucher",
   "license": "ISC",
   "dependencies": {
+    "angular-ui-router": "^0.3.2",
     "hapi": "~7.5.0",
     "path": "^0.4.9"
   },
