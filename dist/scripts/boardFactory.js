@@ -20,7 +20,8 @@
                     }
 
                     return array;
-                }
+                };
+
 
                 self.checkHorizontal = function (board, player, currentCol, currentRow)
                 {
@@ -45,7 +46,8 @@
                     }
 
                     return result;
-                }
+                };
+
 
                 self.checkVertical = function (board, player, currentCol, currentRow)
                 {
@@ -70,7 +72,8 @@
                     }
 
                     return result;
-                }
+                };
+
 
                 self.checkDiagonal = function (board, player, currentCol, currentRow, gradient)
                 {
@@ -102,7 +105,7 @@
                     }
 
                     return result;
-                }
+                };
 
 
                 // knowing that the 'gradient' of the diagonal must be 1 or -1,
@@ -131,7 +134,7 @@
                     }
 
                     return [startCol, startRow]
-                }
+                };
 
                 return self;
             }

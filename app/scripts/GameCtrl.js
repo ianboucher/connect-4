@@ -28,7 +28,7 @@
                 	{
                 		self.board[col][emptyRow] = player;
                 		nMoves += 1;
-                	}
+                	};
 
                 	if (nMoves > 6)
                 	{
@@ -37,11 +37,11 @@
                             $scope.winner = player;
                             (player === 1) ? $scope.nWinsPlayer1++ : $scope.nWinsPlayer2++
                         };
-                	}
+                	};
 
                 	changePlayer();
-                }
-                
+                };
+
 
                 self.setDiscColor = function(value)
                 {
@@ -57,7 +57,8 @@
                     }
 
                     return style;
-                }
+                };
+
 
                 var checkForWin = function (board, player, currentCol, currentRow)
                 {
@@ -69,12 +70,12 @@
                              boardFactory.checkDiagonal (board, player, currentCol, currentRow, -1);
 
                     return result;
-                }
+                };
 
                 var changePlayer = function()
                 {
-                    player = (player === 1) ? 2 : 1
-                }
+                    player = (player === 1) ? 2 : 1;
+                };
             }
         ]);
 })();
